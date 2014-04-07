@@ -1,10 +1,7 @@
-_site/*
-_theme_packages/*
-
-Thumbs.db
 .DS_Store
-
-!.gitkeep
-
-.rbenv-version
-.rvmrc
+_site/**/*
+_site
+_site/*
+_drafts/**/*
+_drafts
+_drafts/*

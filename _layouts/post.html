@@ -1,5 +1,30 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+
+<h1>{{ page.title }}</h1>
+<span class="label label-primary">日期:</span> <span class="label label-warning">{{ page.date | date: "%Y年%m月%d日" }}</span>
+<span class="label label-primary">标签:</span>{% for tag in page.tags%} <span class="label label-warning">{{ tag }}</span>{% endfor %}</span>
+
+<hr>
+{{ content }}
+<wb:share-button appkey="1JuUkl" addition="number" type="button" ralateUid="2509911980"></wb:share-button>
+<hr>
+
+<ul class="pager">
+<li  class="previous">
+{% if page.next %}<a href="{{ page.next.url }}">&larr;较新一篇：{{ page.next.title }}</a>
+{% else %}<a class="disabled" href="#">&larr;较新一篇：没有了</a>
+{% endif %}
+</li>
+<li  class="next">
+{% if page.previous %}<a href="{{ page.previous.url }}">较旧一篇：{{ page.previous.title }}&rarr;</a>
+{% else %}<a class="disabled" href="#">较旧一篇：没有了&rarr;</a>
+{% endif %}
+</li>
+</ul>
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<!-- UY END -->
+

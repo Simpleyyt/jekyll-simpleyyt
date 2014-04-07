@@ -1,0 +1,79 @@
+* {
+    font-family: "Microsoft Yahei UI";
+
+}
+
+body {
+	background: url(bg.png) repeat left top;
+	padding-top: 70px;
+}
+
+img {
+    max-width: 100%;
+}
+.sun {
+	background-color: #C93;
+	border-radius: 150px;
+	box-shadow: 0 0 500px #FC3;
+	height: 300px;
+	left: -80px;
+	position: fixed;
+	top: -50px;
+	width: 300px;
+	z-index: -1;
+}
+
+.dt-bar-item {
+    font-size: 18px;
+}
+ 
+.dt-box {
+    background-color: #FFF;
+    border-color: #999;
+    border-top-color: #999;
+    border-style: solid;
+    border-width: 1px;
+    border-top-width: 4px;
+    padding: 8px;
+	margin-bottom: 16px;
+}
+
+.dt-box-simple {
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+	padding: 4px;
+	margin-bottom: 16px;
+}
+
+.dt-box-blue 
+{
+    border-top-color: #6CF;
+}
+
+.dt-box-red 
+{
+    border-top-color: #C09;
+}
+
+.dt-box-green 
+{
+    border-top-color: #390;
+}
+
+.dt-box-yellow 
+{
+    border-top-color: #FF0;
+}
+
+.dt-title 
+{
+    color: #111;
+    font-size:20px;
+    border-bottom-color: #999;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 4px;
+	margin-bottom: 4px;
+}
