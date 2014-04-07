@@ -1,39 +1,21 @@
 ---
-layout: default
-title: 标签云Tags
-keywords: "Mark Chen,标签Tags"
-description: 标签页。
+layout: page
+title: Tags
+header: Posts By Tag
+group: navigation
 ---
+{% include JB/setup %}
 
-<div class="row" id='tag_cloud'>
-  <div class="col-md-12">
-  {% for tag in site.tags %}
-  <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-  {% endfor %}
-  </div>
-  <hr>
-  {% for tag in site.tags %}
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"id="{{ tag[0] }}">
-	  <div class="thumbnail">
-		<div class="caption">
-		<h3>{{ tag[0] }}</h3>
-		{% for post in tag[1] %}
-		  {{ post.date | date:"%Y-%m-%d" }}
-		  <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-		{% endfor %}
-		</div>
-	  </div>
-	</div>
-  {% endfor %}	
-</div>
-
-<script type="text/javascript" src="/js/jquery.tagcloud.js" charset="utf-8"></script>
-<script language="javascript">
-  $.fn.tagcloud.defaults = {
-    size: {start: 1, end: 2, unit: 'em'},
-    color: {start: '#099', end: '#F60'}
-  };
-  $('#tag_cloud a').tagcloud();
-</script>
+<ul class="tag_box inline">
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+</ul>
 
 
+{% for tag in site.tags %} 
+  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <ul>
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
