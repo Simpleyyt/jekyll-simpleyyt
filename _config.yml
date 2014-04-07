@@ -1,9 +1,9 @@
 ﻿pygments:     true
 markdown:     rdiscount
 permalink:    /posts/:year-:month-:day-:title.html
-title:        Mark Chen
-description:  Mark Chen的个人站点,记录心情与知识。
-keywords:     Mark Chen,个人站点,博客,心情,知识,编程
-author:       Mark Chen
-email:        zhenchentl@gmail.com
-github:       http://github.com/zhenchentl
+title:        Snail
+description:  Snail个人博客
+keywords:     Snail, Simpleyyt
+author:       Snail
+email:        simpleyyt@gmail.com
+github:       http://github.com/simpleyyt
