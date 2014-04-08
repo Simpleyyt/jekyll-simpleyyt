@@ -1,66 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  </head>
-
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-narrow">
-
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
-    </div>
+	<meta name="author" content="{{ site.author.name }}">
 	
-    {% include JB/analytics %}
-  </body>
-</html>
+	<link rel="stylesheet" href="http://elementaryos.org/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="http://elementaryos.org/css/main.css">
+	<link rel="stylesheet" href="http://elementaryos.org/css/pages/journal.css">
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<body>
+	<noscript>
+		&amp;lt;div id="no-js"&amp;gt;Please enable JavaScript in your browser to experience elementaryos.org fully&amp;lt;/div&amp;gt;
+	</noscript>
+    	<div id="page-container">
+		<div>
+		
+			<nav>
+				<div id="nav-l">
+				</div>
+				<div id="nav-c">
+					<ul id="nav-list" style="width: 700px;">
+						<li id="home"><a href="{{ HOME_PATH }}">Home</a></li>
+						{% assign pages_list = site.pages %}
+						{% assign group = 'navigation' %}
+						{% for node in pages_list %}
+							{% if node.title != null %}
+							  {% if group == null or group == node.group %}
+								{% if page.url == node.url %}
+								<li  id = "{{node.title}}" class="active">
+								<span class="nav-l-active"></span>
+								<a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a>
+								<span class="nav-r-active"></span>
+								</li>
+								{% else %}
+								<li id = "{{node.title}}"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+								{% endif %}
+							  {% endif %}
+							{% endif %}
+						 {% endfor %}
+						  
+						{% assign pages_list = nil %}
+						{% assign group = nil %}
+					</ul>
+					<form id="nav-search" method="GET">
+						<div id="search-right-pix">
+							<div id="search-left-pix">
+								<div id="search-center-pix">
+									<div id="search-icon-pix"></div>
+									<input name="query" type="text" placeholder="Search">
+								</div>
+							</div>
+						</div>
+					</form>
+					
+					
+				</div>
+				<div id="nav-r">
+				</div>
+			</nav>
+			<div id="page-content">
+				{{ content }}
+			</div>
+			<div class="clearboth pagebottom"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-940">
+			<div class="footer-general-info">
+				© 2014 elementary.<br><br>
+				Content licensed under:<br>
+				<a class="cc" href="http://creativecommons.org/licenses/by-sa/3.0/">c a b</a><br>
+				<a href="http://elementaryos.org/terms">Terms of Use</a><br>
+				<a id="change-language" href="http://elementaryos.org/language">Change Site Language</a>
+			</div>
+			<div class="footer-col-cont">
+								<div class="footer-nav-col">
+					<h4><a href="http://elementaryos.org/journal">Journal</a></h4>
+					<ul>
+						<li><a href="http://elementaryos.org/journal/category/news">News</a></li>
+						<li><a href="http://elementaryos.org/journal/category/dev">Developer</a></li>
+						<li><a href="http://elementaryos.org/journal/category/edtrl">Editorial</a></li>
+						<li><a href="http://elementaryos.org/journal/category/intv">Interview</a></li>
+						<li><a href="http://elementaryos.org/journal/category/mini">Mini</a></li>
+						<li><a href="http://elementaryos.org/journal/category/ux">User Experience</a></li>
+						<li><a href="http://elementaryos.org/journal/category/video">Video</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav-col">
+					<h4><a href="http://elementaryos.org/support">Support</a></h4>
+					<ul>
+						<li><a href="http://elementaryos.org/docs/user-guide">User Guide</a></li>
+						<li><a href="http://elementaryos.org/answers">Answers</a></li>
+						<li><a href="http://elementaryos.org/support/live">User Chat</a></li>
+						<li><a href="http://elementaryos.org/developer/chat">Developer Chat</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav-col">
+					<h4><a href="http://elementaryos.org/developer">Developer</a></h4>
+					<ul>
+						<li><a href="http://elementaryos.org/docs/human-interface-guidelines">Design</a></li>
+						<li><a href="http://elementaryos.org/docs/code">Code</a></li>
+						<li><a href="https://launchpad.net/elementary">Manage</a></li>
+						<li><a href="http://developer.ubuntu.com/publish/">Distribute</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav-col">
+					<h4><a href="http://elementaryos.org/teams">The Teams</a></h4>
+					<ul>
+						<li><a href="http://elementaryos.org/teams/team_web">Web</a></li>
+						<li><a href="http://elementaryos.org/teams/team_press">Press</a></li>
+						<li><a href="http://elementaryos.org/teams/team_ux">Design</a></li>
+						<li><a href="http://elementaryos.org/teams/team_mod">Moderator</a></li>
+						<li><a href="http://elementaryos.org/teams/team_dev">Developer</a></li>
+						<li><a href="http://elementaryos.org/teams/team_core">Council</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav-col">
+					<h4><a href="http://elementaryos.org/get-involved">Get Involved</a></h4>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="clearboth"></div>
+		</div>
+		<div class="clearboth"></div>
+	</footer>
+	
+
+
+</body></html>
