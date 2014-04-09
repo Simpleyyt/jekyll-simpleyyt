@@ -1,0 +1,25 @@
+h2.substyle {
+	font-size:24px;
+	font-weight:normal;
+	color:#4D4D4D;
+	margin:10px 0 3px;
+	font-family:'Open Sans',arial,sans-serif;
+}
+#coc-cont {
+	text-align:justify;
+	width:600px;
+	margin:0 auto;
+	padding:0 0 10px;
+}
+#coc-cont p {
+	line-height:1.8em;
+}
+#terms-cont {
+	background:#FAFAFA;
+	border:solid 1px #CCC;
+	width:485px;
+	margin:10px auto;
+	box-shadow:0 0 10px rgba(0,0,0,0.1),0 1px 0 white inset;
+	border-radius:5px;
+	padding:20px;
+}

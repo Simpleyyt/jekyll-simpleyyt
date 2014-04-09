@@ -1,6 +1,5 @@
 ---
-layout: page
-title: 最近日志
-tagline: by Snail
-type: RecentPost
+layout: posts
+title: Journal
+tagline: My Blog
 ---

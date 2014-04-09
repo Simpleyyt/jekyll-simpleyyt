@@ -1,0 +1,50 @@
+<footer>
+	<div class="footer-940">
+		<div class="footer-general-info">
+			© 2014 Yitao Yao.<br><br>
+			Content licensed under:<br>
+			<a class="cc" href="http://creativecommons.org/licenses/by-sa/3.0/">c a b</a><br>
+			<a href = "{{ site.Snail.about_path }}">About Me</a><br>
+		</div>
+		<div class="footer-col-cont">
+			<div class="footer-nav-col">
+				<h4><a>Categories</a></h4>
+				<ul>
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Pages</a></h4>
+				<ul>
+					{% assign pages_list = site.pages %}
+					{% include JB/pages_list %}
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Feed</a></h4>
+				<ul>
+					<li><a href="{{ BASE_PATH }}{{ site.JB.atom_path }}">Atom Feed</a></li>
+					<li><a href="{{ BASE_PATH }}{{ site.JB.rss_path }}">RSS Feed</a></li>
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Links</a></h4>
+				<ul>
+					<li><a href = "http://elementaryos.org/">elementaryOS</a></li>
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a href = "{{ site.Snail.about_path }}">About Me</a></h4>
+				<ul>
+					<li><a href = "https://github.com/Simpleyyt">Github</a></li>
+					<li><a href = "http://www.weibo.com/u/1836017133">WeiBo</a></li>
+					<li><a href = "mailto:simpleyyt@gmail.com">Email</a></li>
+				</ul>
+			</div>
+			<div class="clearboth"></div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+	<div class="clearboth"></div>
+</footer>

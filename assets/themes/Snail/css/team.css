@@ -1,0 +1,122 @@
+.team-box {
+	width:392px;
+	float:left;
+	margin:12px 12px 12px 4px;
+	font-size:13px;
+	height:67px;
+	text-align:left;
+	color:#393939;
+	border:solid 1px #CCC;
+	background:#FAFAFA;
+	border-radius:5px;
+	box-shadow:0 0 10px rgba(0,0,0,0.1),0 1px 0 #FFF inset;
+	padding:30px;
+	position:relative;
+}
+.team-box:hover {
+	background:#333;
+	color:#FFF!important;
+	border:solid 1px #4D4D4D;
+	box-shadow:0 0 10px rgba(0,0,0,0.1),0 1px 0 rgba(255,255,255,0.2) inset;
+}
+.team-box h3 {
+	float:left;
+	font-weight:bold;
+	padding:0 0 6px 30px;
+	font-size:15px;
+}
+.team-box:hover h3 {
+	color:#FFF!important;
+}
+.team-box p {
+	display:inline-block;
+	float:left;
+	width:298px;
+	padding:0 0 0 30px;
+	text-align:left;
+	font-size:13px;
+	margin:0;
+}
+.team-box a {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:3;
+}
+.team-box.tb-right {
+	margin:12px 4px 12px 12px;
+}
+.team-box img {
+	display:inline-block;
+	float:left;
+}
+.team-box img.badge {
+	margin:10px auto;
+}
+#profile-avatar {
+	position:absolute;
+	top:36px;
+	left:59px;
+	z-index:2;
+	background:url("../../img/avatar-blank.png");
+}
+#teaminfo #right {
+	width:680px;
+	float:right;
+	display:block;
+	clear:both;
+	padding:0 0 0 140px;
+	min-height:118px;
+}
+#teaminfo ul.team-details li {
+	margin:4px 4px 10px 0;
+	height:14px;
+	background:url("../../img/account/infoicons.png") no-repeat;
+	padding:0 0 0 16px;
+	min-width:210px;
+	display:block;
+	color:#555;
+}
+#teaminfo #right ul#information {
+	padding-top:10px;
+	width:630px;
+}
+#teaminfo #right h1 img.badge {
+	position:relative;
+	top:2px;
+}
+#teaminfo ul.team-details li.irc {
+	background-position:0 2px;
+}
+#teaminfo ul.team-details li.email {
+	background-position:0 -19px;
+}
+#teaminfo ul.team-details li.language {
+	text-transform:capitalize;
+	background-position:0 -79px;
+}
+#teaminfo ul.team-details li.star {
+	background-position:0 -39px;
+}
+#teaminfo ul.team-details li.location {
+	text-transform:capitalize;
+	background-position:0 -59px;
+}
+.team-member {
+	width:410px;
+	float:left;
+	margin:20px 0;
+}
+.team-member h2,.team-member h2 a {
+	color:#4D4D4D;
+}
+#teaminfo div.journal-cat-box {
+	margin: 0 10px;
+	float: left;
+}
+
+div.team-member h3 {
+	margin-top: 10px;
+}

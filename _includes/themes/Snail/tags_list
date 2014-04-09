@@ -1,0 +1,18 @@
+{% if tags_list.first[0] == null %}
+	{% for tag in tags_list %} 
+		<a class="tag-cont" href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">{{ tag }}</div>
+			<div class="tag-r"></div>
+		</a>
+	{% endfor %}
+{% else %}
+	{% for tag in tags_list %} 
+		<a class="tag-cont" href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">{{ tag[0] }}</div>
+			<div class="tag-r"></div>
+		</a>
+	{% endfor %}
+ {% endif %}
+{% assign tags_list = nil %}

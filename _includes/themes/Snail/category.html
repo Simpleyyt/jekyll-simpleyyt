@@ -1,0 +1,10 @@
+<div class="journal-cat-box">
+{% if category[0] == null %}
+<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref" title="{{ category }}">
+	{{ category }}
+{% else %}
+<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref" title="{{ category[0] }}">
+	{{ category[0] }}
+{% endif %}
+</a>
+</div>

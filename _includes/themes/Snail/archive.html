@@ -1,0 +1,53 @@
+<div class="page-title-inline">
+	<h1>{{ page.title }} {% if page.tagline %}</h1>
+	<h2>{{ page.tagline }}</h2>{% endif %}
+</div>
+<div class="cont932">
+	<hr style="margin-top: 0;">
+	<div class="contentarea">
+		<div class="ca-center ca-center20t nobg">
+			<div>
+			{% assign posts_collate = site.posts %}
+			{% for post in posts_collate  %}
+			{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+			{% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+			{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+			{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+			
+			{% if forloop.first %}
+			  <div  class="team-member">
+			  <h2>{{this_year}}</h2>
+			  <h3>{{this_month}}</h3>
+			  <ul>
+			{% endif %}
+			
+			<li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+			
+			{% if forloop.last %}
+			  </ul>
+			</div>
+			{% else %}
+			  {% if this_year != next_year %}
+				</ul>
+			</div>
+			<div  class="team-member">
+				<h2>{{next_year}}</h2>
+				<h3>{{next_month}}</h3>
+				<ul>
+			  {% else %}    
+				{% if this_month != next_month %}
+				  </ul>
+				  <h3>{{next_month}}</h3>
+				  <ul>
+				{% endif %}
+			  {% endif %}
+			{% endif %}
+			
+			{% endfor %}
+			</div>
+			<div class="clearboth"></div>
+		</div>
+	</div>
+	<div class="clearboth"></div>
+</div>
+<div class="clearboth"></div>

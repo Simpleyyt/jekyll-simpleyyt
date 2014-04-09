@@ -1,0 +1,28 @@
+<div class="page-title-inline">
+	<h1>{{ page.title }} {% if page.tagline %}</h1>
+	<h2>{{ page.tagline }}</h2>{% endif %}
+</div>
+<div class="cont932">
+	<hr style="margin-top: 0;">
+	<div id="journal-articles-block">
+	{% for post in site.posts limit:20 %}
+		<div class="journal-article">
+			<div class="journal-post-info">
+				{% assign categories_list = post.categories %}
+				{% assign category = categories_list.first %}
+				{% include themes/Snail/category.html %}
+				{% assign categories_list = nil %}
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="{{ post.url }}">{{ post.title }}</a><span class="author">by Snail</span></h1>
+				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+				</span>
+				<span class="readmore"><a href="{{ post.url }}">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		{% endfor %}
+	</div>
+	<div class="clearboth"></div>
+</div>
+<div class="clearboth"></div>

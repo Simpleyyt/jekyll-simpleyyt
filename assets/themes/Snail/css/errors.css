@@ -1,0 +1,39 @@
+.err-cont {
+	text-align:center;
+}
+.err-cont h1 {
+	font-weight:300;
+}
+.err-cont p {
+	width:600px;
+}
+.err-cont #title-error-icon {
+	color:#b3b3b3;
+	font-family:Raleway,'Open Sans',sans-serif;
+	font-size:100px;
+	padding:50px 0 40px;
+}
+.big-blue-button {
+	height:48px;
+	display:inline-block;
+}
+.big-blue-button .big-blue-left,.big-blue-button .big-blue-center,.big-blue-button .big-blue-right {
+	height:48px;
+	display:block;
+	background: url('../img/big-blue-sprite.png');
+	float:left;
+}
+.big-blue-button .big-blue-left,.big-blue-button .big-blue-right {
+	width:6px;
+}
+.big-blue-button .big-blue-right {
+	background-position:6px 0;
+}
+.big-blue-button .big-blue-center {
+	width:200px;
+	background-position:0 -48px;
+	line-height:48px;
+	color:#FFF;
+	text-shadow:0 1px 0 #276B9E;
+	font-size:16px;
+}

@@ -1,0 +1,31 @@
+<div class="page-title-inline">
+	<h1>{{ page.title }} {% if page.tagline %}</h1>
+	<h2>{{ page.tagline }}</h2>{% endif %}
+</div>
+<div class="cont932">
+	<hr style="margin-top: 0;">
+	<div class="contentarea">
+		<div class="ca-center ca-center20t nobg">
+			<div class="journal-tags" id="teaminfo">
+			  {% assign tags_list = site.tags %}
+			  {% include themes/Snail/tags_list %}
+			</div>
+			<div class="clearboth"></div>
+			<hr>
+			<div>
+			{% for tag in site.tags %} 
+			<div  class="team-member">
+			  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+			  <ul>
+				{% assign pages_list = tag[1] %} 
+				{% include JB/pages_list %}
+			  </ul>
+			</div>
+			{% endfor %}
+			</div>
+			<div class="clearboth"></div>
+		</div>
+	</div>
+	<div class="clearboth"></div>
+</div>
+<div class="clearboth"></div>

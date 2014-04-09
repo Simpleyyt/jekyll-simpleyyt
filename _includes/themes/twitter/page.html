@@ -1,38 +1,9 @@
-<div class="page-title-inline">
-	<h1>{{ page.title }} {% if page.tagline %}</h1>
-	<h2>{{ page.tagline }}</h2>{% endif %}
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
-<div class="cont932">
-	<hr style="margin-top: 0;">
-{% if page.type == "RecentPost" %}
-	<div id="journal-articles-block">
-	{% for post in site.posts limit:3 %}
-		<div class="journal-article">
-			<div class="journal-post-info">
-				<img class="cat-image" src="http://elementaryos.org/img/journal/category-icons/dev.png" alt="Developer" title="Developer">
-				<div class="journal-comment-count">0</div>
-			</div>
-			<div class="journal-body">
-				<h1 class="journal-title"><a href="{{ post.url }}">{{ post.title }}</a><span class="author">by Snail</span></h1>
-				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-				</span>
-				<span class="readmore"><a href="{{ post.url }}">Read More</a></span>
-			</div>
-		</div>
-		<div class="clearboth"></div>
-	{% endfor %}
-	</div>
-{% else %}
-<div class="contentarea">
-	<div class="ca-center ca-center20t nobg">
-		<div class="team-member">
-			{{ content }}
-		</div>
-		<div class="clearboth"></div>
-	</div>
+<div class="row-fluid">
+  <div class="span12">
+    {{ content }}
+  </div>
 </div>
-{% endif %}
-	<div class="clearboth"></div>
-</div>
-<div class="clearboth"></div>
