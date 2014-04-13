@@ -12,6 +12,15 @@
 	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/team.css">
 	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/static.css">
 	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/errors.css">
+	<link rel="stylesheet" href="{{ ASSET_PATH }}/google-code-prettify/prettify.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
+	<script type="text/javascript">
+	  $(function(){
+		$("pre code").addClass("prettyprint linenums");
+		prettyPrint();
+	  });
+	</script>
 <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

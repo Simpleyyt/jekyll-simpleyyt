@@ -39,7 +39,7 @@ code {
 	border:1px solid #ccc;
 	border-radius:3px;
 	background:#efefef;
-	color:#777;
+	/* color:#777; */
 }
 pre code {
 	display: block;
