@@ -353,12 +353,16 @@ nav #nav-c ul#nav-list li#home a {
 	overflow:hidden;
 	display:block;
 	position:relative;
-	background:url("../img/navsprite.png") 0 -108px;
+	background: url("../img/avatar.jpg");
 	padding:0;
+	background-size: 100% 100%;
+	border-radius: 50%;  
+	/* box-shadow: 0 0 0px 1px black, 0 0 4px 4px #5C5C5C; */
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	border-width: 1px;
 }
-nav #nav-c ul#nav-list li#home a:hover {
-	background-position:0 -261px;
-}
+
 nav #nav-c form#nav-search {
 	display:table-cell;
 	width:100%;
@@ -1202,10 +1206,11 @@ footer .footer-940 {
 footer .footer-940 .footer-general-info {
 	line-height:1.6em;
 	padding:0 0 0 58px;
-	background:url("../img/footer-logo.png") no-repeat;
+	/* background: url("../img/avatar.jpg") no-repeat; */
 	float:left;
 	width:154px;
 	height:auto;
+	background-size: 48px 48px;
 }
 footer .footer-940 .footer-general-info a {
 	font-size:13px;
