@@ -15,7 +15,7 @@
 			</div>
 			<div class="journal-body">
 				<h1 class="journal-title"><a href="{{ post.url }}">{{ post.title }}</a><span class="author">by Snail</span></h1>
-				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 10 }}</p>
 				</span>
 				<span class="readmore"><a href="{{ post.url }}">Read More</a></span>
 			</div>

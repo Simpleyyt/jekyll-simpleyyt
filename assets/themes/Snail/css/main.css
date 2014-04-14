@@ -34,7 +34,7 @@ blockquote:before,blockquote:after,q:before,q:after {
 	content:none;
 }
 code {
-	padding:.2em .5em;
+	padding: .15em .5em;
 	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
 	border:1px solid #ccc;
 	border-radius:3px;
@@ -43,6 +43,7 @@ code {
 }
 pre code {
 	display: block;
+	overflow: auto;
 }
 ins {
 	text-decoration:none;
@@ -127,7 +128,8 @@ ol li {
 }
 ul {
 	list-style:disc;
-	padding:0 0 0 1em;
+	padding: 0 0 0 1em;
+	padding-right: 1em;
 }
 em,i {
 	font-style:italic;
