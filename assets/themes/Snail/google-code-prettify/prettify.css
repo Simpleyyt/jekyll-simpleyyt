@@ -7,10 +7,10 @@
   .str { color: #080 }  /* string content */
   .kwd { color: #00F;}  /* a keyword */
   .com { color: #800 }  /* a comment */
-  .typ { color: #606 }  /* a type name */
+  .typ { color: #940B94;}  /* a type name */
   .lit { color: #E01074;}  /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #777;}
+  .pun, .opn, .clo { color: #3778CA;}
   .tag { color: #008 }  /* a markup tag name */
   .atn { color: #606 }  /* a markup attribute name */
   .atv { color: #080 }  /* a markup attribute value */
