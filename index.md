@@ -1,5 +1,5 @@
 ---
 layout: posts
-title: Journal
-tagline: My Blog
+title: Simpleyyt
+tagline: Yitao's Blog
 ---
