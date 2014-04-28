@@ -1,6 +1,6 @@
 ---
 layout: post
-category: dialy
+category: daily
 title: Win7/Win8.1打开文件夹时假死的解决办法
 tagline: by IT之家
 tags: [win8.1]
