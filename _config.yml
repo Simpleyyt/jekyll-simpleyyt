@@ -10,14 +10,17 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title :  Snail 
-tagline: Snail's Blog
+title :  Simpleyyt 
+tagline: Yitao's Blog
 author :
-  name : Yitao Yao 
-  email : simpleyyt@gmail.com 
-  github : Simpleyyt
-  twitter : username
-  feedburner : feedname
+  name : Yitao Yao
+contact :
+  e-mail : mailto:simpleyyt@gmail.com
+  Github : https://github.com/Simpleyyt
+  WeiBo : http://www.weibo.com/u/1836017133
+  Google+ : https://plus.google.com/103860633659538888207?rel=author
+links :
+  Yitao's Blog : http://simpleyyt.github.io/
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -76,6 +79,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
+  about_path : /about.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
@@ -129,6 +133,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
-Snail :
-  about_path : /about.html

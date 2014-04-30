@@ -1,10 +1,10 @@
 <footer>
 	<div class="footer-940">
 		<div class="footer-general-info">
-			© 2014 Yitao Yao.<br><br>
+			© 2014 {{ site.author.name }}.<br><br>
 			Content licensed under:<br>
 			<a class="cc" href="http://creativecommons.org/licenses/by-sa/3.0/">c a b</a><br>
-			<a href = "{{ site.Snail.about_path }}">About Me</a><br>
+			<a href = "{{ site.JB.about_path }}">About Me</a><br>
 		</div>
 		<div class="footer-col-cont">
 			<div class="footer-nav-col">
@@ -32,16 +32,17 @@
 			<div class="footer-nav-col">
 				<h4><a>Links</a></h4>
 				<ul>
-					<li><a href = "http://elementaryos.org/">elementaryOS</a></li>
+				{% for link in site.links %} 
+					<li><a href = "{{ link[1] }}">{{ link[0] }}</a></li>
+				{% endfor %}
 				</ul>
 			</div>
 			<div class="footer-nav-col">
-				<h4><a href = "{{ site.Snail.about_path }}">About Me</a></h4>
+				<h4><a href = "{{ site.JB.about_path }}">About Me</a></h4>
 				<ul>
-					<li><a href = "https://github.com/Simpleyyt">Github</a></li>
-					<li><a href = "http://www.weibo.com/u/1836017133">WeiBo</a></li>
-					<li><a href = "mailto:simpleyyt@gmail.com">e-mail</a></li>
-					<li><a href = "https://plus.google.com/103860633659538888207?rel=author">Google+</a></li>
+				{% for contact in site.contact %} 
+					<li><a href = "{{ contact[1] }}">{{ contact[0] }}</a></li>
+				{% endfor %}
 				</ul>
 			</div>
 			<div class="clearboth"></div>

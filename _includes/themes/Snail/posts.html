@@ -1,6 +1,11 @@
 <div class="page-title-inline">
-	<h1>{{ page.title }} {% if page.tagline %}</h1>
-	<h2>{{ page.tagline }}</h2>{% endif %}
+	{% if page.group == 'home' %}
+	<h1>{{ site.title }} </h1>
+	{% if site.tagline %}<h2>{{ site.tagline }}</h2>{% endif %}
+	{% else %}
+	<h1>{{ page.title }} </h1>
+	{% if page.tagline %}<h2>{{ page.tagline }}</h2>{% endif %}
+	{% endif %}
 </div>
 <div class="cont932">
 	<hr style="margin-top: 0;">
