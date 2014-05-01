@@ -7,18 +7,26 @@ pygments: true
 
 markdown: kramdown
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
+# The title and tagline is showed on homepage
 #
 title :  Simpleyyt 
 tagline: Yitao's Blog
+
+# Information about author
+#
 author :
   name : Yitao Yao
+  
+# Information for contacts
+#
 contact :
   e-mail : mailto:simpleyyt@gmail.com
   Github : https://github.com/Simpleyyt
   WeiBo : http://www.weibo.com/u/1836017133
   Google+ : https://plus.google.com/103860633659538888207?rel=author
+  
+# Links showed on the footer
+#
 links :
   Yitao's Blog : http://simpleyyt.github.io/
 
