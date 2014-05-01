@@ -8,7 +8,7 @@ For all usage and documentation please see: <http://jekyllbootstrap.com>
 
 ## About theme
 
-This theme is the copy of [elementaryOS](http://elementaryos.org) portal page. Some feature is imperfect, such as searching, but I will make it more perfect.
+This theme is the copy of [elementaryOS](http://elementaryos.org) portal page. Some features are imperfect, such as searching, but I will make it more perfect.
 
 ## Usage
 
