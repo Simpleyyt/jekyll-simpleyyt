@@ -30,6 +30,16 @@ contact :
 links :
   Yitao's Blog : http://simpleyyt.github.io/
 
+# The search engine. Only support google custom search engine.
+#
+search : 
+  provider : gcse
+  
+  # Your Google custom search engine ID
+  #
+  gcse :
+    cx : 004255214185073801838:_icnlls8kds
+  
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -88,6 +98,7 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
   about_path : /about.html
+  search_path : /search.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
@@ -95,6 +106,8 @@ JB :
   #
   comments :
     provider : duoshuo
+    duoshuo :
+      short_name : simpleyyt
     disqus :
       short_name : simpleyyt
     livefyre :
