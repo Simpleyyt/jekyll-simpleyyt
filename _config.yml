@@ -9,26 +9,26 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  Simpleyyt 
-tagline: Yitao's Blog
+title :  执手、画残阳 
+tagline: Hanson's Blog
 
 # Information about author
 #
 author :
-  name : Yitao Yao
+  name : Hanson Li
   
 # Information for contacts
 #
 contact :
-  e-mail : mailto:simpleyyt@gmail.com
-  Github : https://github.com/Simpleyyt
-  WeiBo : http://www.weibo.com/u/1836017133
-  Google+ : https://plus.google.com/103860633659538888207?rel=author
+  e-mail : mailto:i@liyafeng.cn
+  Github : https://github.com/Liyafeng
+  WeiBo : http://weibo.com/tangidou
+  Url : http://liyafeng.cn
   
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://simpleyyt.github.io/
+  Hanson's Blog : http://liyafeng.cn
 
 # The search engine. Only support google custom search engine.
 #
@@ -48,7 +48,7 @@ search :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://simpleyyt.github.io
+#production_url : http://simpleyyt.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
