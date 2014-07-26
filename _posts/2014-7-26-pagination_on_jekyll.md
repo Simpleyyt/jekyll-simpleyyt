@@ -36,23 +36,23 @@ tags: [jekyll, pagination]
 只是分页还不够，我们还需要在每个页面上做一个跳转到其他页面的导航，这里需要用到paginator的一些其他属性。
 
 首先检测总的页数，如果只有一页，自然就不需要分页了。通过paginator的total_pages属性能判断总页数：
-
+    {% raw %}
     {% if paginator.total_pages > 1 %}
     <!-- 分页代码 -->
     {% endif %}
+    {% endraw %}
 
 我们需要一个跳转到上一页的按钮，这个按钮在第一页不需要显示，通过paginator的previous_page属性来判断是否是第一个页面，使用paginator的previous_page_path来输出上一页的路径，注意在前面添加baseurl，并进行一些必要的字符替换：
 
+    {% raw %}
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
     {% endif %}
+    {% endraw %}
 
-接着是生成所有页面的按钮，并使当前页按钮无效化，遍历所有页面，使用paginator的page属性来确定当前页，如果是当前页，则按钮无效，否则使用
+接着是生成所有页面的按钮，并使当前页按钮无效化，遍历所有页面，使用paginator的page属性来确定当前页，如果是当前页，则按钮无效，否则使用`{% raw %}{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}{% endraw %}`来将`:num`替换成当前页面的数字生成页面路径：
 
-    {{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}
-
-来将`:num`替换成当前页面的数字生成页面路径：
-
+    {% raw %}
     {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
           <span class="active">{{ page }}</span>
@@ -62,12 +62,15 @@ tags: [jekyll, pagination]
           <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
     {% endfor %}
+    {% endraw %}
 
 最后生成一个下一页的按钮，在最后一页不显示，和上一页按钮类似，通过paginator的next_page_path来确定是否还有下一页：
 
+    {% raw %}
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
     {% endif %}
+    {% endraw %}
 
 这样一个完整的分页导航功能就做好了，效果就和博客主页上的分页效果是一样的。
 
