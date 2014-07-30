@@ -2,6 +2,7 @@
 layout: post
 category: Embedded
 title: Marvel 88w8686 Linux驱动分析
+tagline: by Snail
 tags: [wifi, linux, driver]
 ---
 由于编写Marvel 88w8686 wlan模块SPI接口的*stm32*驱动的需要，对[Marvel 88w8686 Linux](http://pan.baidu.com/s/1dDiSZFb) SPI接口的驱动进行了分析和参考。
