@@ -18,6 +18,6 @@ tags: [vocore, embedded]
 
 以下是它的接口/引脚图，接口非常的丰富，使用必须用电烙铁焊上去。
 
-![VoCore引脚图](http://pic.yupoo.com/simpleyyt/DWyLoaQE/RYVJH.png)
+![VoCore引脚图](http://pic.yupoo.com/simpleyyt/DWDDYtLs/medish.jpg)
 
 作者除了本身的博客之外，不提供其它的资料，所示还是先看看他的博客吧。
