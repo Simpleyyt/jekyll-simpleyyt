@@ -3,7 +3,7 @@ layout: post
 category: embedded
 title: Marvell88W8686的SPI主控接口
 tagline: by LoongEmbedded
-tags: [embedded, 88w8686, wlan, wifi, driver]
+tags: [embedded, 88w8686, wifi]
 ---
 88w8686 是一款低成本、低功耗，支持IEEE 802.11a/g/b MAC/基带/射频(RF)无线局域网标准的片上系统,设计支持IEEE 802.11a/g标准的6、
 9、12、18、24、36、48、54M 有效数据速率，和IEEE 802.11 b 标准的1、2、5.5、11 M 数据速率。88w8686 提供IEEE802.11/802.11 b 标准直接序列扩散光谱(DSSS),802.11a/ g 正交频分复用(OFDM)基带调制,媒体访问控制(MAC),CPU,内存,主机接口,直接转换收音机,无线局域网射频(RF）功能相结合的单一集成芯片。

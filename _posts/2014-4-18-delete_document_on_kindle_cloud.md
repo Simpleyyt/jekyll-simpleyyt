@@ -3,7 +3,7 @@ layout: post
 category: daily
 title: 批量删除Kindle云端的个人文档
 tagline: by Snail
-tags: [daily, kindle]
+tags: [kindle]
 ---
 在使用Kindle的推送时，有一个不好的地方就是，推送的电子书会被放到云端，而且要删除的话不能批量删，长年累月就积累了一大批。本人找到一种方法可以批量删除当前*个人文档*页面的电子书。
 
