@@ -7,6 +7,8 @@ tags: [wifi, linux, driver]
 ---
 由于编写Marvel 88w8686 wlan模块SPI接口的*stm32*驱动的需要，对[Marvel 88w8686 Linux](http://pan.baidu.com/s/1dDiSZFb) SPI接口的驱动进行了分析和参考。
 
+<!--more-->
+
 #Marvel驱动的使用#
 
 88w8686的Linux驱动是通过模块方式载入内核的，在使用时加载进去就行了，88w8686的Linux驱动还包含了sdio的驱动，加载时，还必须加载sdio驱动。在运行`make`命令进行编译后，会生成`sdio.o`和`sd8386.o`文件，在终端下输入下列命令进行加载：

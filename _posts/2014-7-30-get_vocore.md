@@ -7,6 +7,8 @@ tags: [vocore, embedded]
 ---
 由于项目需要用到RT5350，一个廉价的WiFi片上芯片，在网上搜索相关资料之后，找到了VoCore这个国内的开源项目，一个带用WiFi的硬币大小的Linux计算机。如果感兴趣的话可以了解一下[作者的博客](http://vonger.cn/)和[相关介绍](https://www.indiegogo.com/projects/vocore-a-coin-sized-linux-computer-with-wifi)。
 
+<!--more-->
+
 > #什么是VoCore？#
   VoCore是运行OpenWrt的开源硬件。尽管WIFI, USB, UART, 20+ GPIO一应俱全，但是大小为1英寸（25mm x 25mm）。它提供了很多的接口，比如说10/100M以太网口、USB、UART、I2C、I2S、PCM、JTAG和超过20个的GPIO口。
 

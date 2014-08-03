@@ -5,7 +5,9 @@ title: 强化你的Terminal IDE——在android平板/手机上编写C/C++
 tagline: by Snail
 tags: [android, c++, c]
 ---
-[Terminal IDE](http://code.google.com/p/terminal-ide/downloads/list)是一个可扩展的终端应用，其包含了全功能的Java/HTML/Android开发套件。Terminal IDE集成了VIM, ssh, git等多个功能，其中强大之处，大家自己发觉，如果你用惯了Linux下的shell命令，那么用Terminal IDE你将会得心应手，喜欢上它的。
+Terminal IDE是一个可扩展的终端应用，其包含了全功能的Java/HTML/Android开发套件。Terminal IDE集成了VIM, ssh, git等多个功能，其中强大之处，大家自己发觉，如果你用惯了Linux下的shell命令，那么用Terminal IDE你将会得心应手，喜欢上它的。
+
+<!--more-->
 
 虽然Terminal IDE很强大，可以编写Java，android，但它没有gcc/g++。没关系，Terminal IDE强大之处就在于它是可拓展的，具体可以看它的Help。此处，我说明一下，如何把gcc/g++加入Terminal IDE，其实就是将linux-arm-gcc加入Terminal IDE 。 
 

@@ -20,7 +20,12 @@
 			</div>
 			<div class="journal-body">
 				<h1 class="journal-title"><a href="{{ post.url }}">{{ post.title }}</a><span class="author">{{ post.tagline }}</span></h1>
-				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 10 }}</p>
+				{% case site.excerpt %}
+				{% when "truncate_words" %}
+				<span class="teaser"><p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+				{% when "teaser" %}
+				<span class="teaser">{{ post.content  | split:'<!--more-->' | first }}
+				{% endcase %}
 				</span>
 				<span class="readmore"><a href="{{ post.url }}">Read More</a></span>
 			</div>
