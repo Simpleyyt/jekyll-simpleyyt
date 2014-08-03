@@ -16,6 +16,7 @@ You can edit the `_config.yml` file to change the setting of site. If you want t
 
 ## Change Log
 
+ * Download google fonts to the local.
  * Add google custom search engine.
 
 ## License

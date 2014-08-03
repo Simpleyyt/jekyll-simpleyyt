@@ -1,12 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
-	@import url(http://fonts.googleapis.com/css?family=Vollkorn);
-	@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-	@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
-	@font-face {
+@import url(./fonts/opensans.css);
+@import url(./fonts/vollkorn.css);
+@import url(./fonts/droidsans.css);
+@import url(./fonts/raleway.css);
+@font-face {
 	font-family:'CC-ICONS';
 	font-style:normal;
 	font-weight:normal;
-	src:url('http://mirrors.creativecommons.org/presskit/cc-icons.ttf') format('truetype');
+	src:url('./fonts/cc-icons.ttf') format('truetype');
 }
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
 	margin:0;
