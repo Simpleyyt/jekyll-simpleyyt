@@ -17,24 +17,19 @@ tags: [vocore, embedded]
 
 本人决定用Mini USB线来改装。Mini USB有4条线，分别是红、白、绿、蓝（黑），其中红是正极，蓝（黑）是地，将这两根线接到图中红框所示的地方，便可以正常启动。
 
-![](http://pic.yupoo.com/simpleyyt/DWDBnZEn/small.jpg)
-![](http://pic.yupoo.com/simpleyyt/DWDBJmZ1/small.jpg)
-![](http://pic.yupoo.com/simpleyyt/DWDC86EI/small.jpg)
-![](http://pic.yupoo.com/simpleyyt/DWDCDIBr/small.jpg)
+![](http://pic.yupoo.com/simpleyyt/DXff2TTy/medish.jpg)
 
 ![](http://pic.yupoo.com/simpleyyt/DWDDWsPw/medish.jpg)
 
 #问题出现#
 
-接上5V USB电源之后，LED亮了大约1秒，之后，大约隔18秒之后，led亮了大约15秒，之后，又等了好久，始终看不到VoCore的Wifi出现。询问作者Vonger，Vonger表示led正常，要求给出USB-TTL的Log进行分析，所示又制作了VoCore的USB-TTL。
+接上5V USB电源之后，LED亮了大约1秒，之后，大约隔18秒之后，led亮了大约15秒，之后，又等了好久，始终看不到VoCore的Wifi出现。询问作者Vonger，Vonger表示led正常，要求给出USB-TTL的Log进行分析，所以又制作了VoCore的USB-TTL。
 
 #USB-TTL输出#
 
 依照Vonger博客上的方法，使用USB-TTL模块，并将相应引脚接到红框部分。
 
-![](http://pic.yupoo.com/simpleyyt/DWDDTaEw/small.jpg)
-![](http://pic.yupoo.com/simpleyyt/DWDDtzoC/small.jpg)
-![](http://pic.yupoo.com/simpleyyt/DWDD3L67/small.jpg)
+![](http://pic.yupoo.com/simpleyyt/DXfetmAA/medish.jpg)
 
 ![](http://pic.yupoo.com/simpleyyt/DWDDVduJ/medish.jpg)
 
