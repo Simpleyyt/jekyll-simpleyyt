@@ -51,4 +51,6 @@ tags: [win8.1]
 
 以上就是IT之家小编为大家整理的一些解决Win8/Windows 8.1打开文件夹假死的解决办法，大家可以试试看，若在Windows Vista/Windows7上出现同样的问题，不妨按照原文的思路一试。
 
+---
+
 *本文章转自：<http://www.ithome.com/html/win8/73946.htm>*

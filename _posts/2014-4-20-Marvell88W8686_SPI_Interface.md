@@ -161,4 +161,6 @@ G-SPI时钟频率不能大于内部总线时钟频率的2.5倍，内部总线时
 
 ![](http://img.blog.csdn.net/20130609184820203)
 
+---
+
 *本文章转自：<http://blog.csdn.net/loongembedded/article/details/9067013>*

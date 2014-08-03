@@ -1,9 +1,9 @@
 ---
 layout: post
 category: daily
-title: 在jekyll上使用分页
+title: 在Jekyll上使用分页
 tagline: by 天镶
-tags: [jekyll, pagination]
+tags: [jekyll]
 ---
 一个博客不可能只有几篇文章，如果所有文章全部放在一个页面中，在文章不多的情况下也许较为直观，一旦文章数量增加，不仅加大了用户需要加载的数据量，也为用户检索文章造成了障碍，所以基本上每个博客都会有文章的分页。一般的分页都是通过像JSP的模板引擎直接在从数据库中分页取出时生成动态生成页面，或者通过ajax从数据库分页取出传递到前端。但现在github+jekyll是静态的页面，没有数据库。好在jekyll支持分页功能。
 
@@ -79,5 +79,7 @@ tags: [jekyll, pagination]
 #总结#
 
 jekyll的分页总的来说还算给力，基本的功能可以完成。但是有一些缺陷，就是category，tag的分类分页无法实现，必须通过插件的方式来做。但是github不允许三方插件，所以只能通过一些其他的方式实现了。
+
+---
 
 *本文转自：<http://blog.segmentfault.com/skyinlayer/1190000000406015>*
