@@ -15,7 +15,7 @@ group: home
 <div class="cont932">
 	<hr style="margin-top: 0;">
 	<div id="journal-articles-block">
-	{% for post in site.posts limit:20 %}
+	{% for post in paginator.posts %}
 		<div class="journal-article">
 			<div class="journal-post-info">
 				{% assign categories_list = post.categories %}
@@ -38,6 +38,13 @@ group: home
 		<div class="clearboth"></div>
 		{% endfor %}
 	</div>
+	{% if paginator.next_page  %}
+	<div id="journal-arrows-cont">
+			<a href="{{ paginator.next_page_path }}" class="journal-arrow ja-forward"></a>
+	</div>
+	{% endif %}
+	<div class="clearboth"></div>
+	<div id="journal-loadmore">Load More…</div>
 	<div class="clearboth"></div>
 </div>
 <div class="clearboth"></div>
