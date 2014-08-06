@@ -21,7 +21,7 @@ VoCore连上电源后，等待大约30秒之后，便会有发出一个ssid为Vo
     
 输入密码之后，便可以登录进去了。
 
-#STA+AP模式＃
+#STA+AP模式#
 
 根据作者博客介绍，VoCore的STA和AP能够同时工作。首先，开启STA模式，添加下面内容到｀/etc/config/network`。
 
