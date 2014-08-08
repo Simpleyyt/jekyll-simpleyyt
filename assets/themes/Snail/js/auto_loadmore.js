@@ -2,6 +2,9 @@ $(document).ready(function() {
     var loadbutton = $('#journal-loadmore');
     var loadtext = loadbutton.text();
     var url = $('.journal-arrow.ja-forward').attr("href");
+    $.ajaxSetup({  
+        async : false  
+    });
     $('#journal-arrows-cont').hide();
     HideIfNoMorePosts();
     function HideIfNoMorePosts() {
@@ -29,8 +32,7 @@ $(document).ready(function() {
             $('<span></span>').appendTo('#journal-articles-block').hide().append(articles).fadeIn(500);
 			url = $(data).find('.journal-arrow.ja-forward').attr("href");
             loadbutton.empty().append(loadtext);
-			HideIfNoMorePosts();
+		    HideIfNoMorePosts();
 		});
-        HideIfNoMorePosts();
     }
 });
