@@ -2,6 +2,9 @@ $(document).ready(function() {
     var loadbutton = $('#journal-loadmore');
     var loadtext = loadbutton.text();
 	var url = $('.journal-arrow.ja-forward').attr("href");
+	$.ajaxSetup({  
+        async : false  
+    });
     $('#journal-arrows-cont').hide();
     HideIfNoMorePosts();
     function HideIfNoMorePosts() {
