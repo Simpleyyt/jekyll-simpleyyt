@@ -16,6 +16,7 @@ $(document).ready(function() {
     });
     function moreposts() {
 		var next_url = url;
+		if (loadbutton.text() != loadtext) return;
         loadbutton.empty().append('Loading...');
 		$.get(next_url, function(data,status){
 			var articles = $(data).find('#journal-articles-block').children();
