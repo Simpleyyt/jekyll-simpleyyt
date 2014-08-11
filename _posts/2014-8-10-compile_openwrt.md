@@ -5,7 +5,7 @@ title: OpenWrt的编译
 tagline: by Snail
 tags: [openwrt, embedded]
 ---
-最近在淘宝上买了基于AR9331的Easy-Link模块，尝试着编译了一下Openwrt，编译环境为ubuntu。
+最近在淘宝上买了基于AR9331的Easy-Link模块，尝试着编译了一下OpenWrt，编译环境为ubuntu 12.04。
 
 <!--more-->
 
@@ -39,7 +39,7 @@ tags: [openwrt, embedded]
 
     make menuconfig
    
-打开Openwrt配置界面进行配置。当然，Easy-Link有自己的补丁包。
+打开OpenWrt配置界面进行配置。当然，Easy-Link有自己的补丁包。
 
 如果你想配置内核，可以在终端中输入：
 
