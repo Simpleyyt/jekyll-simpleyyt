@@ -17,7 +17,7 @@ tagline: Yitao's Blog
 author :
   name : Yitao Yao
   
-# Information for contacts
+# Information for contacts showed at on the footer
 #
 contact :
   e-mail : mailto:simpleyyt@gmail.com
