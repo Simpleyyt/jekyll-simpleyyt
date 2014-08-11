@@ -1,7 +1,7 @@
 ---
 layout: post
-category: openWrt
-title: Openwrt的编译
+category: openwrt
+title: OpenWrt的编译
 tagline: by Snail
 tags: [openwrt, embedded]
 ---
