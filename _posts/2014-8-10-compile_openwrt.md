@@ -17,7 +17,7 @@ tags: [openwrt, embedded]
     
 #下载及更新Openwrt源码#
 
-打开终端，输入下以命令下载源码,当然还可以下载其它的版本。
+打开终端，输入下以命令下载源码,当然还可以下载其它的版本，注意不要包含中文路径。
 
     svn co svn://svn.openwrt.org/openwrt/branches/attitude_adjustment
     
