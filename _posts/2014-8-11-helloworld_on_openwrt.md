@@ -7,6 +7,8 @@ tags: [openwrt, embedded]
 ---
 终于编译完成了OpenWrt，并且成功交叉编译了Helloworld，并在Easy-Link的板子上运行。
 
+<!--more-->
+
 #编译OpenWrt SDK#
 
 编译OpenWrt的过程，可参考[OpenWrt的编译]({% post_url 2014-8-10-compile_openwrt %})。编译配置我勾选了`Advanced configuration option`、`Build the OpenWrt SDK`和`Build the OpenWrt based Toolchain`。
