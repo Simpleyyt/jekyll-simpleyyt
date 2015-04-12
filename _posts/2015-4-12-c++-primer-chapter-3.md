@@ -5,7 +5,12 @@ tagline: by Snail
 title: 《C++ Primer》笔记：第3章
 tags: c++ primer
 ---
+《C++ Primer》第3章笔记，字符串、向量和数组。
+
+<!--more-->
+
 # Vector
+
 ## vector值初始化(P89)
 
 如果Vector对象中的类型不支持默认初始化，就必须提供初始值，如（`string`支持默认初始化）：
