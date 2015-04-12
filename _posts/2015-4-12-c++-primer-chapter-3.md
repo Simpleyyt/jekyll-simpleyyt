@@ -66,6 +66,10 @@ C++11新标准引入了`cbegin()`返回`const_iterator`。
 
 C++11新标准加入了begin和end函数。
 
+## 标准库类型
+
+`size_t`为数组大小类型，`ptrdiff_t`为指针距离类型。
+
 ## 使用数组初始化vector
 
     int int_arr[] = {0, 1, 2};
@@ -73,7 +77,7 @@ C++11新标准加入了begin和end函数。
     
 # 多维数组
 
-# 使用范围for
+## 使用范围for
 
     size_t cnt = 0;
     for (auto &row : ia)
