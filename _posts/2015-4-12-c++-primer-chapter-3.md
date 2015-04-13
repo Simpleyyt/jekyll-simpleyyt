@@ -21,7 +21,7 @@ tags: c++ primer
 
 如果使用花括号，先尝试列表初始化，再尝试默认初始化，如：
 
-    vector<string> v5{"hi}; //列表初始化
+    vector<string> v5{"hi"}; //列表初始化
     vector<string> v6{10}; //默认初始化
     
 ## vector操作
@@ -85,4 +85,16 @@ C++11新标准加入了begin和end函数。
             col = cnt;
             ++cnt;
         }
+
 除了最内层的循环外，其它的循环的控制变量必须是引用类型的。
+
+## 指针和多维数组
+
+    int ia[3][4];
+    int (*p)[4] ia;
+    p = &ia[2];
+    for (auto p = ia; p != ia + 3; ++p) {
+        for (auto q = *p; q != *p + 4; ++q)
+            cout << *q << ' ';
+        cout << endl;
+    }
