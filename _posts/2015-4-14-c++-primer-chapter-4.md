@@ -2,9 +2,12 @@
 layout: post
 category: c++
 title: 《C++ Primer》笔记：第4章
+tagline: by Snail
 tags: c++ primer
 ---
 《C++ Primer》第4章笔记，表达式。
+
+<!--more-->
 
 # 表达式
 
