@@ -23,4 +23,4 @@ tags: c++ primer
     for (declaration : expression)
 	    statement
 
-expression必须是一个序列，拥有能返回迭代器的begin和end成员。如果需要对序列中的元素执行写操作，循环变量必须是
+`expression`必须是一个序列，拥有能返回迭代器的`begin`和`end`成员。如果需要对序列中的元素执行写操作，循环变量必须是引用类型。
