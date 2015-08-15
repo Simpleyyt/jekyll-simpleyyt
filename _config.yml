@@ -7,6 +7,9 @@ highlighter: pygments
 
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  
 # The title and tagline is showed on homepage
 #
 title :  Simpleyyt 
