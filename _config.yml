@@ -6,9 +6,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 markdown: kramdown
-
-kramdown:
-  input: GFM
   
 # The title and tagline is showed on homepage
 #
