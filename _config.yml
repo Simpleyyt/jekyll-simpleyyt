@@ -9,26 +9,25 @@ markdown: kramdown
   
 # The title and tagline is showed on homepage
 #
-title :  Simpleyyt 
-tagline: Yitao's Blog
+title :  赵宏阳
+tagline: 赵宏阳的 Blog
 
 # Information about author
 #
 author :
-  name : Yitao Yao
+  name : 赵宏阳
   
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:simpleyyt@gmail.com
-  Github : https://github.com/Simpleyyt
-  WeiBo : http://www.weibo.com/u/1836017133
-  Google+ : https://plus.google.com/103860633659538888207?rel=author
-  
+  e-mail : mailto:zhy755788055@gmail.com
+  Github : https://github.com/zhy755788055
+  WeiBo : http://www.weibo.com/u/1835738442
+ 
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://simpleyyt.github.io/
+  赵宏阳的 Blog : http://www.zhaohongyang.org
 
 # The search engine. Only support google custom search engine.
 #
@@ -68,7 +67,7 @@ auto_loadmore : true
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://simpleyyt.github.io
+production_url : http://www.zhaohongyang.org
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -127,9 +126,9 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : simpleyyt
+      short_name : zhy755788055
     disqus :
-      short_name : simpleyyt
+      short_name : zhy755788055
     livefyre :
       site_id : 123
     intensedebate :
