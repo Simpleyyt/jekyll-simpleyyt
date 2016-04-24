@@ -5,15 +5,14 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-gems:
-  - jemoji
-
 markdown: kramdown
   
 # The title and tagline is showed on homepage
 #
 title :  Simpleyyt 
 tagline: Yitao's Blog
+
+gems: [jekyll-paginate]
 
 # Information about author
 #
@@ -110,7 +109,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  ASSET_PATH : /assets/themes/Snail
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
