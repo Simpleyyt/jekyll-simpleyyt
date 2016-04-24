@@ -4,7 +4,7 @@
 			© 2014 {{ site.author.name }}.<br><br>
 			Content licensed under:<br>
 			<a class="cc" href="http://creativecommons.org/licenses/by-sa/3.0/">c a b</a><br>
-			<a href = "{{ site.JB.about_path }}">About Me</a><br>
+			<a href = "{{ BASE_PATH}}{{ site.JB.about_path }}">About Me</a><br>
 		</div>
 		<div class="footer-col-cont">
 			<div class="footer-nav-col">
@@ -38,7 +38,7 @@
 				</ul>
 			</div>
 			<div class="footer-nav-col">
-				<h4><a href = "{{ site.JB.about_path }}">About Me</a></h4>
+				<h4><a href = "{{ BASE_PATH}}{{ site.JB.about_path }}">About Me</a></h4>
 				<ul>
 				{% for contact in site.contact %} 
 					<li><a href = "{{ contact[1] }}">{{ contact[0] }}</a></li>
