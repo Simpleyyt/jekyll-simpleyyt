@@ -11,23 +11,23 @@
 	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 	
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/jquery.fancybox.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/main.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/pages/journal.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/team.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/static.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/errors.css">
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/main.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/pages/journal.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/team.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/static.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/css/errors.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}{{ ASSET_PATH }}/google-code-prettify/prettify.css">
 	
-	<link rel="shortcut icon" href="{{ ASSET_PATH }}/img/favicon.ico">
+	<link rel="shortcut icon" href="{{ BASE_PATH }}{{ ASSET_PATH }}/img/favicon.ico">
 	
-	<script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ BASE_PATH }}{{ ASSET_PATH }}/js/jquery.min.js"></script>
 	{% if site.auto_loadmore == true %}
-	<script type="text/javascript" src="{{ ASSET_PATH }}/js/auto_loadmore.js"></script>
+	<script type="text/javascript" src="{{ BASE_PATH }}{{ ASSET_PATH }}/js/auto_loadmore.js"></script>
 	{% else %}
-	<script type="text/javascript" src="{{ ASSET_PATH }}/js/loadmore.js"></script>
+	<script type="text/javascript" src="{{ BASE_PATH }}{{ ASSET_PATH }}/js/loadmore.js"></script>
 	{% endif %}
-	<script type="text/javascript" src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
+	<script type="text/javascript" src="{{ BASE_PATH }}{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
 	
 	<script type="text/javascript">
 	  $(function(){
